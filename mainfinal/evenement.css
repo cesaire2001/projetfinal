@@ -1,0 +1,238 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*style navBar*/
+.navBar {
+    position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nomEglise {
+    margin-top: 50px;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    animation: flash 2.2s linear infinite;
+}
+
+@keyframes flash {
+    0% {
+        color: black;
+        text-shadow: 0 0 7px black;
+    }
+
+    50% {
+        color: black;
+        text-shadow: none;
+    }
+
+    100% {
+        color: black;
+        text-shadow: 0 0 7px black;
+    }
+}
+
+
+
+.typeEglise {
+    text-decoration: none;
+    margin-top: 30px;
+    color: #636e72;
+    font-size: 35px;
+    animation: flash-1 2.2s linear infinite;
+}
+
+@keyframes flash-1 {
+    0% {
+        color: #636e72;
+        text-shadow: 0 0 7px #636e72;
+    }
+
+    50% {
+        color: #636e72;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #636e72;
+        text-shadow: 0 0 7px #636e72;
+    }
+}
+
+.menu {
+    margin-top: 60px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 20px;
+    color: #b2bec3;
+    background: linear-gradient(90deg, #c23616, #ff9f43);
+    border-radius: 40px;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    letter-spacing: 2px;
+}
+
+.menu a:hover {
+    color: black;
+}
+
+
+#active {
+    color: black;
+}
+.icon{
+    display: none;
+}
+
+/*style section-0*/
+.photoEglise {
+    position: center;
+    margin-left: 350px;
+    margin-top: 50px;
+    border: 1px solid #c23616;
+    border-radius: 5px;
+}
+
+/*style section-1*/
+.contenu-1-1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 350px;
+    padding-top: 30px;
+}
+
+.texte-1 {
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: 100;
+}
+
+.texte-1-1 {
+    margin: 0 20px;
+    font-size: 20px;
+    color: #636e72;
+}
+
+/*style footer*/
+
+
+hr {
+    border: none;
+    border-top: 1px solid #636e72;
+    margin: 50px 0;
+
+}
+.piedDePage{
+    background-color: black;
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    color: #636e72;
+    margin: 0 250px;
+    height: 250px;
+    font-size: 20px;
+}
+.listeDesHoraires,
+.listeDesReseaux {
+    list-style-type: none;
+}
+
+.listeDesReseaux li a {
+    text-decoration: none;
+    color: #636e72;
+}
+
+@media only screen and (min-width:320px) and (max-width:1200px) {
+    /*style navBar*/
+    .menu a:not(:nth-child(3)) {
+        display: none;
+    }
+
+    .menu a.icon {
+        float: right;
+        margin-right: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu.responsive {
+        position: center; 
+    }
+
+    
+    .menu.responsive a {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 250px;
+        font-size: 20px;
+    }
+
+    .menu.responsive .icon{
+        display: none;
+    }
+    .nomEglise {
+        width: 1200px;
+        font-size: 70px;
+    }
+
+    .typeEglise {
+        margin-left: 100px;
+        width: 1000px;
+    }
+
+    .menu {
+        width: 900px;
+        margin-left: 200px;
+    }
+    /*style section-0*/
+    .photoEglise{
+        margin: 50px 150px;   
+    }
+
+    /*style section-1*/
+    .section-1{  
+        align-items: center;
+        text-align: center; 
+        width: 500px;
+        margin-left: 100px;
+    }
+    .contenu-1-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .texte-1{
+        width: 300px;
+    }
+    .texte-1-1{
+        width: 300px;
+    }
+    
+    /*style footer*/
+    .piedDePage{
+        width: 1250px;
+    }
+    .footer {
+        width: 800px;
+    }
+
+    hr {
+        width: 1200px;
+
+    }
+}
